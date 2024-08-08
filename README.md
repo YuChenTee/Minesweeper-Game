@@ -2,7 +2,7 @@
 
 Welcome to TimeBOMB Sweep! This strategy game challenges you to clear a rectangular board filled with hidden mines. Your objective is to uncover cells without detonating any mines. Each cell reveals a number indicating how many mines are adjacent to it. If you suspect a cell contains a mine, you can flag it to avoid accidental clicks. The game incorporates elements of logic and strategy, enhanced with superpowers to help you tackle challenging situations.
 
-**Features**
+# Features
 
 **Gameplay**
 - Board Clearing: Begin by clicking on any cell, which will always be safe. The revealed number will show how many adjacent cells contain mines.
@@ -23,7 +23,7 @@ Welcome to TimeBOMB Sweep! This strategy game challenges you to clear a rectangu
 **BGM**
 - Background Music: The game features a carefully selected background music track that complements the gameplay experience, enhancing immersion and engagement.
 
-**OOP Design**
+# OOP Design
 The game is structured using Object-Oriented Programming (OOP) principles to ensure modularity, scalability, and ease of maintenance:
 - GameBoard: Manages the grid layout and the placement of mines. Handles game logic related to cell states and win/loss conditions.
 - Cell: Represents an individual cell on the board. Each cell tracks whether it is revealed, flagged, or contains a mine. It also holds the number of adjacent mines.
@@ -31,7 +31,7 @@ The game is structured using Object-Oriented Programming (OOP) principles to ens
 - Timer: Controls the game timer, including starting, stopping, and freezing operations.
 - UIComponents: Handles the interaction between the player and the game. Manages graphical elements like buttons, displays, and notifications.
 
-**MVC Architecture**
+# MVC Architecture
 The game adheres to the Model-View-Controller (MVC) architecture to maintain a clean separation of concerns:
 - Model:
   - Manages the core game data, including the game board, cell states, and superpower effects.
@@ -42,3 +42,7 @@ The game adheres to the Model-View-Controller (MVC) architecture to maintain a c
 - Controller:
   - Processes user inputs (e.g., cell clicks, flagging) and updates the model accordingly. Manages game state transitions and triggers superpower actions.
   - Coordinates interactions between the user interface and the game model, ensuring that user actions are correctly reflected in the view.
+
+# Conclusion
+This project demonstrates the practical application of object-oriented programming concepts, including inheritance, polymorphism, encapsulation, and abstraction. The challenges faced and solutions implemented during development have contributed to a deeper understanding of software design and development practices
+
