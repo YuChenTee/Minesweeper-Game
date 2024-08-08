@@ -5,7 +5,7 @@ Welcome to TimeBOMB Sweep! This strategy game challenges you to clear a rectangu
 **Features**
 
 **Gameplay**
--Board Clearing: Begin by clicking on any cell, which will always be safe. The revealed number will show how many adjacent cells contain mines.
+- Board Clearing: Begin by clicking on any cell, which will always be safe. The revealed number will show how many adjacent cells contain mines.
 -Mines and Flags: Flag cells where you believe mines are located. Revealing a mine will result in a game loss, while flagging all mines correctly will result in a win.
 -Superpowers:
   -Superpower 1: Flags 2 random mine cells on the board, offering a strategic advantage when you're unsure.
