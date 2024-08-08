@@ -45,5 +45,5 @@ The game adheres to the Model-View-Controller (MVC) architecture to maintain a c
   - Coordinates interactions between the user interface and the game model, ensuring that user actions are correctly reflected in the view.
 
 # Conclusion
-This project demonstrates the practical application of object-oriented programming concepts, including inheritance, polymorphism, encapsulation, and abstraction. The challenges faced and solutions implemented during development have contributed to a deeper understanding of software design and development practices
+This project demonstrates the practical application of object-oriented programming concepts, including inheritance, polymorphism, encapsulation, and abstraction. The challenges faced and solutions implemented during development have contributed to a deeper understanding of software design and development practices. Additionally, the development of a user-friendly interface using ScalaFX and Scene Builder, along with the adherence to MVC architecture, has ensured a clean separation of concerns, enhancing the maintainability and scalability of the codebase. The combination of these design principles has resulted in a robust and engaging game that provides both a challenging and enjoyable experience for players.
 
