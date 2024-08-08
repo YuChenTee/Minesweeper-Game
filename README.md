@@ -1,6 +1,7 @@
 # TimeBOMB Sweep
 
-Welcome to TimeBOMB Sweep! This strategy game challenges you to clear a rectangular board filled with hidden mines. Your objective is to uncover cells without detonating any mines. Each cell reveals a number indicating how many mines are adjacent to it. If you suspect a cell contains a mine, you can flag it to avoid accidental clicks. The game incorporates elements of logic and strategy, enhanced with superpowers to help you tackle challenging situations.
+Welcome to _TimeBOMB Sweep_! This strategy game challenges you to clear a rectangular board filled with hidden mines. Your objective is to uncover cells without detonating any mines. Each cell reveals a number indicating how many mines are adjacent to it. If you suspect a cell contains a mine, you can flag it to avoid accidental clicks. The game incorporates elements of logic and strategy, enhanced with superpowers to help you tackle challenging situations.
+TimeBOMB Sweep is developed using ScalaFX and Scene Builder, providing a modern and user-friendly interface. This game is a modified version of the classic Minesweeper, with added features and enhancements to make the gameplay more engaging and strategic.
 
 # Features
 
