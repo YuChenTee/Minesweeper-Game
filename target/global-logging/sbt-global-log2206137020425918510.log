@@ -1,0 +1,93 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\User\AppData\Local\Temp\idea.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\User\AppData\Local\Temp\idea.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.9.7 (Oracle Corporation Java 1.8.0_401)
+[debug] Load.defaultLoad until apply took 69.8715ms
+[debug]           Load.loadUnit: plugins took 54.8728ms
+[debug]           Load.loadUnit: defsScala took 0.2441ms
+[debug] [Loading] Scanning directory C:\Users\User\IdeaProjects\finalprojectv2-YuChenTee\project
+[debug]             Load.loadUnit: mkEval took 5.7211ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\User\IdeaProjects\finalprojectv2-YuChenTee\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 10.7059 ms
+[info] loading settings for project finalprojectv2-yuchentee-build from idea.sbt ...
+[debug]               Load.resolveProject(finalprojectv2-yuchentee-build) took 38.5354ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id finalprojectv2-yuchentee-build, base: C:\Users\User\IdeaProjects\finalprojectv2-YuChenTee\project, plugins: List(<none>))) took 56.1822ms
+[debug] [Loading] Done in C:\Users\User\IdeaProjects\finalprojectv2-YuChenTee\project, returning: (finalprojectv2-yuchentee-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 1744.6349ms
+[debug]           Load.loadUnit: cleanEvalClasses took 5.0291ms
+[debug]         Load.loadUnit(file:/C:/Users/User/IdeaProjects/finalprojectv2-YuChenTee/project/, ...) took 1808.5909ms
+[debug]       Load.apply: load took 1912.8482ms
+[debug]       Load.apply: resolveProjects took 4.8812ms
+[debug]       Load.apply: finalTransforms took 44.3593ms
+[debug]       Load.apply: config.delegates took 5.1605ms
+[debug]       Load.apply: Def.make(settings)... took 292.8988ms
+[debug]       Load.apply: structureIndex took 64.0359ms
+[debug]       Load.apply: mkStreams took 1.3707ms
+[info] loading project definition from C:\Users\User\IdeaProjects\finalprojectv2-YuChenTee\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 3675.3641ms
+[debug]     Load.loadUnit: defsScala took 0.0019ms
+[debug] [Loading] Scanning directory C:\Users\User\IdeaProjects\finalprojectv2-YuChenTee
+[debug]       Load.loadUnit: mkEval took 0.1896ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 1.5849 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 18.2645ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: C:\Users\User\IdeaProjects\finalprojectv2-YuChenTee, plugins: List(<none>))) took 20.6254ms
+[debug] [Loading] Done in C:\Users\User\IdeaProjects\finalprojectv2-YuChenTee, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 779.8969ms
+[debug]     Load.loadUnit: cleanEvalClasses took 4.1305ms
+[debug]   Load.loadUnit(file:/C:/Users/User/IdeaProjects/finalprojectv2-YuChenTee/, ...) took 4461.2405ms
+[debug] Load.apply: load took 4565.9324ms
+[debug] Load.apply: resolveProjects took 0.2106ms
+[debug] Load.apply: finalTransforms took 23.0214ms
+[debug] Load.apply: config.delegates took 0.2598ms
+[debug] Load.apply: Def.make(settings)... took 63.2741ms
+[debug] Load.apply: structureIndex took 39.0282ms
+[debug] Load.apply: mkStreams took 0.0024ms
+[info] set current project to scalaFXIntro (in build file:/C:/Users/User/IdeaProjects/finalprojectv2-YuChenTee/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(idea-shell, None, None)

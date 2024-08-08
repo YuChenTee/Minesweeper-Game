@@ -1,0 +1,394 @@
+
+.text-field {
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS", sans-serif;
+}
+.button {
+    -fx-background-color: linear-gradient(#3A99D9, #1C73C0);
+    -fx-text-fill: white;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-border-color: #1C73C0;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS", sans-serif;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#1C73C0, #3A99D9);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 12, 0, 0, 6);
+    -fx-cursor: hand;
+}
+
+.button:pressed {
+    -fx-background-color: #1C73C0;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+
+/* AnchorPane Background */
+.anchor-pane {
+    -fx-background-color: linear-gradient(to bottom, #E0F7FA, #4FC3F7);
+    -fx-font-family: "Comic Sans MS", sans-serif;
+}
+
+/* GridPane Styling */
+.grid-pane {
+    -fx-padding: 15;
+    -fx-background-color: rgba(255, 255, 255, 0.7);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+
+/* Revealed Normal Cell */
+.revealed-normal-cell {
+    -fx-background-color: linear-gradient(#E0E0E0, #B0B0B0);
+    -fx-text-fill: #333;
+    -fx-border-color: #A0A0A0;
+    -fx-transition: all 0.3s ease-in-out;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 3);
+}
+
+.revealed-normal-cell:hover {
+    -fx-background-color: linear-gradient(#B0B0B0, #E0E0E0);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 7, 0, 0, 4);
+}
+
+.revealed-normal-cell:pressed {
+    -fx-background-color: linear-gradient(#B0B0B0, #E0E0E0);
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 3);
+}
+
+/* Revealed Mine Cell */
+.revealed-mine-cell {
+    -fx-background-color: linear-gradient(#FF5C5C, #FF0000);
+    -fx-text-fill: white;
+    -fx-border-color: #D00000;
+    -fx-transition: all 0.3s ease-in-out;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 5);
+}
+
+.revealed-mine-cell:hover {
+    -fx-background-color: linear-gradient(#FF0000, #FF5C5C);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 12, 0, 0, 6);
+}
+
+.revealed-mine-cell:pressed {
+    -fx-background-color: linear-gradient(#FF0000, #FF5C5C);
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+
+.permanently-flagged-cell {
+    -fx-background-color: green;
+    -fx-border-width: 1;
+}
+.permanently-flagged-cell:hover {
+    -fx-background-color: linear-gradient(#4CAF50, #2E7D32);
+}
+
+.timerLabel {
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS", sans-serif;
+    -fx-font-size: 20px;
+}
+
+/* General Styling for AnchorPane */
+.home-anchor-pane {
+    -fx-background-color: linear-gradient(to bottom, #E0F7FA, #4FC3F7);
+    -fx-padding: 20;
+}
+
+/* VBox Styling */
+.home-vbox {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-background-radius: 15;
+    -fx-padding: 20;
+    -fx-border-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
+}
+
+/* Text Styling */
+.game-name-text {
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS", sans-serif;
+    -fx-font-size: 50px;
+    -fx-text-fill: linear-gradient(from 0% 0% to 100% 100%, #000428, #004e92);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0.0, 2, 2);
+}
+
+.logo-image {
+    -fx-image: url("/images/logo.png");
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 5);
+}
+
+.pause-image {
+    -fx-image: url("/images/pause.png");
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 5);
+}
+.pause-image:hover {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.7), 15, 0, 0, 7); /* Increase drop shadow on hover */
+    -fx-scale-x: 1.1; /* Slightly enlarge the image on hover */
+    -fx-scale-y: 1.1;
+}
+
+
+.help-image {
+    -fx-image: url("/images/help.png");
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 5);
+}
+.help-image:hover {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.7), 15, 0, 0, 7); /* Increase drop shadow on hover */
+    -fx-scale-x: 1.1; /* Slightly enlarge the image on hover */
+    -fx-scale-y: 1.1;
+}
+
+
+.superpower1-image {
+    -fx-image: url("/images/reveal.png");
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 5);
+}
+.superpower1-image:hover {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.7), 15, 0, 0, 7); /* Increase drop shadow on hover */
+    -fx-scale-x: 1.1; /* Slightly enlarge the image on hover */
+    -fx-scale-y: 1.1;
+}
+
+
+.superpower2-image {
+    -fx-image: url("/images/freeze.png");
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 5);
+}
+.superpower2-image:hover {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.7), 15, 0, 0, 7); /* Increase drop shadow on hover */
+    -fx-scale-x: 1.1; /* Slightly enlarge the image on hover */
+    -fx-scale-y: 1.1;
+}
+
+.start-button {
+    -fx-background-color: linear-gradient(#4CAF50, #388E3C);
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-color: #388E3C;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS", sans-serif;
+}
+
+.start-button:hover {
+    -fx-background-color: linear-gradient(#388E3C, #4CAF50);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 12, 0, 0, 6);
+    -fx-cursor: hand;
+}
+
+.start-button:pressed {
+    -fx-background-color: #388E3C;
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
+}
+
+.level-button {
+    -fx-background-color: linear-gradient(#FFA726, #FB8C00);
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-color: #FB8C00;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS", sans-serif;
+}
+
+.level-button:hover {
+    -fx-background-color: linear-gradient(#FB8C00, #FFA726);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 12, 0, 0, 6);
+    -fx-cursor: hand;
+}
+
+.level-button:pressed {
+    -fx-background-color: #FB8C00;
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
+}
+
+.exit-button {
+    -fx-background-color: linear-gradient(#F44336, #D32F2F);
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-color: #D32F2F;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS", sans-serif;
+}
+
+.exit-button:hover {
+    -fx-background-color: linear-gradient(#D32F2F, #F44336);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 12, 0, 0, 6);
+    -fx-cursor: hand;
+}
+
+.exit-button:pressed {
+    -fx-background-color: #D32F2F;
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
+}
+
+.gameOverAnchorPane {
+    -fx-padding: 20;
+    -fx-border-color: #D32F2F;
+    -fx-border-width: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 15, 0, 0, 7);
+    -fx-text-align: center;
+}
+
+.gameOverLabel {
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS", sans-serif;
+    -fx-font-size: 45px;
+    -fx-text-fill: black;
+}
+
+/*GameOverDialog*/
+.playAgainButton {
+    -fx-background-color: linear-gradient(#4CAF50, #2E7D32);
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-color: #2E7D32;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS", sans-serif;
+}
+
+.playAgainButton:hover {
+    -fx-background-color: linear-gradient(#2E7D32, #4CAF50);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 12, 0, 0, 6);
+    -fx-cursor: hand;
+}
+
+.playAgainButton:pressed {
+    -fx-background-color: #2E7D32;
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
+}
+
+
+.victoryAnchorPane {
+    -fx-font-family: "Comic Sans MS", sans-serif;
+    -fx-border-color:  orange;
+    -fx-border-width: 5;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 15, 0, 0, 7);
+    -fx-text-align: center;
+}
+
+.victoryLabel {
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS", sans-serif;
+    -fx-font-size: 50px;
+    -fx-text-fill: linear-gradient(from 0% 0% to 100% 100%, red, orange);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0.0, 2, 2);
+}
+
+.highScoreLabel {
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS", sans-serif;
+    -fx-font-size: 22px;
+    -fx-text-fill: red;
+}
+
+.pauseAnchorPane {
+    -fx-font-family: "Comic Sans MS", sans-serif;
+    -fx-border-color:  #004e92;
+    -fx-border-width: 5;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 15, 0, 0, 7);
+    -fx-text-align: center;
+}
+/* Text Styling */
+.pause-text {
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS", sans-serif;
+    -fx-font-size: 36px;
+    -fx-text-fill: linear-gradient(from 0% 0% to 100% 100%, #000428, #004e92);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0.0, 2, 2);
+}
+
+.helpLabel {
+    -fx-font-family: "Comic Sans MS", sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 17px;
+}
+
+.scroll-pane {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #4FC3F7;
+    -fx-border-width: 5px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Style for the vertical scrollbar */
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: #f0f0f0;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #4FC3F7;
+    -fx-background-radius: 5px;
+}
+
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: #e6e6e6;
+    -fx-background-radius: 5px;
+}
+
+.leaderboard-table {
+    -fx-font-family: "Comic Sans MS", sans-serif;
+    -fx-background-color: linear-gradient(to bottom, #E0F7FA, #4FC3F7);
+}
+
+.leaderboard-table .column-header {
+    -fx-background-color: linear-gradient(#3A99D9, #4FC3F7);
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.leaderboard-table .table-row-cell {
+    -fx-background-color: linear-gradient(#F0F8FF, #DCEFFD);
+    -fx-text-fill: #333;
+}
+
+.leaderboard-table .table-row-cell:selected {
+    -fx-background-color: linear-gradient(#B0C4DE, #778899);
+    -fx-text-fill: white;
+}
+
+.leaderboard-table .table-cell {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER; /* Centers the text */
+    -fx-padding: 8px;
+    -fx-border-color: #D0E6F5;
+    -fx-border-width: 1;
+}
+
+.leaderboard-table .table-cell:selected {
+    -fx-background-color: linear-gradient(#B0C4DE, #778899);
+    -fx-text-fill: white;
+}
+
+.podium-image {
+    -fx-image: url("/images/podium.png");
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 5);
+}
